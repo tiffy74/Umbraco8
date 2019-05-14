@@ -58,8 +58,7 @@ ul.sections>li.current>a::after {
     transform: translateY(0px);
 }
 ul.sections>li.current>a .section__name,
-ul.sections>li>a:hover .section__name, 
-ul.sections>li>a:focus .section__name {
+ul.sections>li>a:hover .section__name {
 	opacity: 1;
     -webkit-font-smoothing: subpixel-antialiased;
 }
@@ -67,6 +66,8 @@ ul.sections>li>a:focus .section__name {
 ul.sections>li>a:focus .section__name {
     .tabbing-active & {
         box-shadow: 0 0 2px @pinkLight, inset 0 0 2px 1px @pinkLight;
+        border: 1px solid;
+        border-color: @navbarLinkColorHover;
     }
 }
 
